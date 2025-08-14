@@ -1,10 +1,12 @@
 {
-  "name": "json-host",
+  "name": "snapmob-backend",
   "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "serve -s public"
+    "start": "json-server --host 0.0.0.0 --watch db.json --port $PORT"
   },
   "dependencies": {
-    "serve": "^14.0.1"
+    "json-server": "^0.17.3"
   }
 }
